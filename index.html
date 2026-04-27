@@ -77,7 +77,7 @@
                 <div class="card-info">
                     <h4>School & Books Edition</h4>
                     <p>April 2026</p>
-                    <p class="price">Book Now at just Rs 130 per copy</p>
+                    <p class="price">Rs 130 per copy</p>
                 </div>
             </div>
             <div class="edition-card hidden">
@@ -93,38 +93,34 @@
 
     <section id="book-now" class="booking">
         <div class="booking-container">
-            <h2>Book Your Copy Today! 🎈</h2>
+            <h2>Book Your Copy Today! 🎈 <br><small style="font-size: 0.6em; color: #E84D7A;">(Bookings Currently Closed)</small></h2>
             <form id="booking-form" action="https://formspree.io/f/mzdyddjb" method="POST">
                 <div class="form-group">
                     <label for="parentName">Parent's Name</label>
-                    <input type="text" id="parentName" name="parentName" placeholder="e.g. Jane Doe" required>
+                    <input type="text" id="parentName" name="parentName" placeholder="e.g. Jane Doe" disabled>
                 </div>
                 <div class="form-group row">
                     <div class="col">
                         <label for="childAge">Child's Age</label>
-                        <input type="number" id="childAge" name="childAge" min="3" max="15" placeholder="e.g. 7"
-                            required>
+                        <input type="number" id="childAge" name="childAge" min="3" max="15" placeholder="e.g. 7" disabled>
                     </div>
                     <div class="col">
                         <label for="editionSelect">Selected Edition</label>
-                        <select id="editionSelect" name="editionSelect" required>
+                        <select id="editionSelect" name="editionSelect" disabled>
                             <option value="">Choose an Edition...</option>
                             <option value="April 2026 (School & Books)">April 2026 (130 rs.)</option>
-
                         </select>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="mobile">Contact Number</label>
-                    <input type="tel" id="mobile" name="mobile" placeholder="e.g. 9876543210" pattern="[0-9]{10}"
-                        title="Please enter a valid 10-digit mobile number" required>
+                    <input type="tel" id="mobile" name="mobile" placeholder="e.g. 9876543210" disabled>
                 </div>
                 <div class="form-group">
                     <label for="address">Delivery Address</label>
-                    <textarea id="address" name="address" rows="3" placeholder="Full address for magazine delivery..."
-                        required></textarea>
+                    <textarea id="address" name="address" rows="3" placeholder="Full address for magazine delivery..." disabled></textarea>
                 </div>
-                <button type="submit" class="btn-submit">Submit Booking 🚀</button>
+                <button type="button" class="btn-submit" disabled style="background: #ccc; cursor: not-allowed; box-shadow: none; color: #666; transform: none;">Submit Booking 🚀</button>
             </form>
             <div id="form-success" class="success-message" style="display: none;">
                 <h3>🎉 Booking Successful!</h3>
